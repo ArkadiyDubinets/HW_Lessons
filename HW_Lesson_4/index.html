@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Qwitcher+Grypen:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>HW_Lesson_4</title>
+  </head>
+  <body>
+    <header>
+      <!-- Почему Заголовок коричневый, а шрифт Roboto-black-900 синий, хотя шрифты раньше подключены и конкретика по классам  у обоих? -->
+      <h1 class="title">Заголовок</h1>
+      <nav id="up">
+        <ol class="forcats">
+          <li><a href="#photo">Фото котов</a></li>
+          <li>
+            <a href="#info">Описание котов</a>
+            <ul>
+              <li><a href="#home">Домашние коты</a></li>
+              <li><a href="#street">Уличные коты</a></li>
+              <li><a href="#wild">Дикие коты</a></li>
+            </ul>
+          </li>
+          <li><a href="#down">Контакты</a></li>
+        </ol>
+      </nav>
+    </header>
+    <main>
+      <h2 id="photo">Фото котов</h2>
+      <!-- Что за figure? уместно ли -->
+      <figure class="allphoto">
+        <ol>
+          <li class="photo name">
+            Удивлённый кот
+            <div class="block_picture">
+              <img src="img/cat_1.jpg" alt="Удивлённый кот" />
+            </div>
+          </li>
+          <li class="photo name">
+            Наглый кот
+            <div class="block_picture">
+              <img src="img/cat_2.jpg" alt="Наглый кот" />
+            </div>
+          </li>
+          <li class="photo name">
+            Грустный кот
+            <div class="block_picture">
+              <img src="img/cat_3.jpg" alt="Грустный кот" />
+            </div>
+          </li>
+          <li class="photo name">
+            Маленький кот
+            <div class="block_picture">
+              <img src="img/cat_4.jpg" alt="Маленький кот" />
+            </div>
+          </li>
+        </ol>
+      </figure>
+      <span class="roboto-black-900">Проверим шрифты</span>
+      <div class="fonts">
+        <div class="roboto-regular-400">Я есть Roboto-regular-weight-400</div>
+        <div class="roboto-medium-500">Я есть Roboto-medium-500</div>
+        <div class="roboto-bold-700">Я есть Roboto-bold-700</div>
+        <div class="roboto-black-900">Я есть Roboto-black-900</div>
+        <div class="larsseit-regular-400">Я есть Larsseit-regular-weight-400</div>
+        <div class="larsseit-medium-500">Я есть Larsseit-medium-500</div>
+        <div class="larsseit-bold-700">Я есть Larsseit-bold-700</div>
+        <div class="lato-regular-400">Я есть Lato-regular-weight-400</div>
+        <div class="lato-bold-700">Я есть Lato-bold-700</div>
+        <div class="lato-black-900">Я есть Lato-black-900</div>
+      </div>
+      <h2 id="info">Описание котов</h2>
+      <div class="allcatstext">
+        <div class="homects">
+          <h3 id="home">Домашние коты</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi numquam suscipit cupiditate possimus cumque
+            libero. Quibusdam quam nemo repellendus animi at nam, quidem eos consequatur alias perferendis ducimus,
+            culpa a! Officiis iste accusantium fugit dolores praesentium rem quasi ex soluta repellendus eaque ullam
+            eveniet ratione, eos similique odit. Dolor, rerum. Laborum quaerat explicabo sapiente a animi est ex
+            mollitia! Accusamus? Officiis hic totam alias inventore obcaecati eaque velit iusto, ducimus quibusdam
+            labore nemo quo voluptatem qui. Maxime minima exercitationem, voluptate asperiores nobis, tempore repellat
+            officiis illo sint unde modi facilis! Cum quibusdam obcaecati velit provident porro veniam, dicta cupiditate
+            voluptatum veritatis soluta aspernatur accusamus aliquid autem neque ipsam non harum perspiciatis quisquam
+            nesciunt. Sed similique aliquid placeat laboriosam excepturi et! Quia laudantium obcaecati provident ut
+            maxime minima pariatur, quisquam at qui fugiat! Nobis culpa eum tempora, fuga, beatae officia inventore
+            obcaecati deleniti, incidunt quis animi fugit dolores molestiae amet distinctio!
+          </p>
+        </div>
+        <div class="streetcats">
+          <h3 id="street">Уличные коты</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi numquam suscipit cupiditate possimus cumque
+            libero. Quibusdam quam nemo repellendus animi at nam, quidem eos consequatur alias perferendis ducimus,
+            culpa a! Officiis iste accusantium fugit dolores praesentium rem quasi ex soluta repellendus eaque ullam
+            eveniet ratione, eos similique odit. Dolor, rerum. Laborum quaerat explicabo sapiente a animi est ex
+            mollitia! Accusamus? Officiis hic totam alias inventore obcaecati eaque velit iusto, ducimus quibusdam
+            labore nemo quo voluptatem qui. Maxime minima exercitationem, voluptate asperiores nobis, tempore repellat
+            officiis illo sint unde modi facilis! Cum quibusdam obcaecati velit provident porro veniam, dicta cupiditate
+            voluptatum veritatis soluta aspernatur accusamus aliquid autem neque ipsam non harum perspiciatis quisquam
+            nesciunt. Sed similique aliquid placeat laboriosam excepturi et! Quia laudantium obcaecati provident ut
+            maxime minima pariatur, quisquam at qui fugiat! Nobis culpa eum tempora, fuga, beatae officia inventore
+            obcaecati deleniti, incidunt quis animi fugit dolores molestiae amet distinctio!
+          </p>
+        </div>
+        <div class="wildcats">
+          <h3 id="wild">Дикие коты</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet culpa libero tenetur iure magni consectetur
+            doloremque officiis cupiditate atque dignissimos laboriosam necessitatibus perferendis, quia tempora neque
+            reiciendis explicabo vero est. Dolor nostrum earum nobis quidem quas voluptate voluptatum, modi maxime quos
+            nam tenetur illum eos commodi sed eveniet maiores quis itaque voluptas perferendis excepturi, facere
+            provident quod numquam minus. Ad? Architecto quasi dolorum doloribus quia non libero explicabo alias. Enim
+            eos quam repellat sapiente est asperiores sed aliquid laudantium, voluptates dolor ducimus at consequuntur?
+            Aperiam sapiente nam nisi velit ipsa.
+          </p>
+          <div class="stop bigwildcats">
+            <h4>Крупные дикие коты</h4>
+            <ul>
+              <li>Лев</li>
+              <li>
+                Тигр
+                <ol>
+                  <li style="color: red">Белый тигр</li>
+                  <li style="color: red">Амурский Тигр</li>
+                </ol>
+              </li>
+              <li>Пантера</li>
+              <li>Леопард</li>
+            </ul>
+          </div>
+          <div class="stop smallwildcats">
+            <h4>Мелкие дикие коты</h4>
+            <ul>
+              <li>Манул</li>
+              <li>Барханный кот</li>
+              <li>Андская кошка</li>
+              <li>Сервал</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <h5 id="down"><u>Кошачий подвал</u></h5>
+      <a href="http://surl.li/cznvb" target="_blank">O нас</a>
+      <a href="http://surl.li/oifc" target="_blank">O Вас</a>
+      <a href="contacts.html" target="_blank">Контакты</a>
+      <a href="#up">Наверх</a>
+    </footer>
+  </body>
+</html>

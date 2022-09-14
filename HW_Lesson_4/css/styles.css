@@ -1,0 +1,164 @@
+/* -------Стили - шрифты------- */
+
+/* body {
+	font-family: "Lato";
+	font-weight: 400;
+} */
+
+body {
+	font-family: "Larsseit";
+	font-weight: 400;
+} 
+
+/* .title {
+	font-family: "Roboto";
+	font-weight: 900;
+} */
+
+h2 {
+	font-family: "Lato";
+	font-weight: 700;
+}
+
+h3 {
+	font-family: "Roboto";
+	font-weight: 500;
+} 
+
+p {
+	font-family: "Lato";
+	font-weight: 400;
+}
+
+/* Roboto */
+
+.roboto-regular-400 {
+	font-family: "Roboto";
+	font-weight: 400;
+}
+
+.roboto-medium-500 {
+	font-family: "Roboto";
+	font-weight: 500;
+}
+
+.roboto-bold-700 {
+	font-family: "Roboto";
+	font-weight: 700;
+}
+
+.roboto-black-900, 
+.title {
+	font-family: "Roboto";
+	font-weight: 900;
+}
+
+/* Larsseit */
+
+.larsseit-regular-400 {
+	font-family: "Larsseit";
+	font-weight: 400;
+}
+
+.larsseit-medium-500 {
+	font-family: "Larsseit";
+	font-weight: 500;
+}
+
+.larsseit-bold-700 {
+	font-family: "Larsseit";
+	font-weight: 700;
+}
+
+/* Lato */
+
+.lato-regular-400 {
+	font-family: "Lato";
+	font-weight: 400;
+}
+
+.lato-bold-700 {
+	font-family: "Lato";
+	font-weight: 700;
+}
+
+.lato-black-900 {
+	font-family: "Lato";
+	font-weight: 900;
+}
+
+/* -------Стили - цвета------- */
+
+* {
+	color: rgb(32, 32, 51);
+}
+
+/* h1 {
+	color: rgb(90, 161, 19);
+} */
+
+h3 {
+	color: darkgreen;
+}
+
+h3 {
+	font-family: "Roboto";
+	font-weight: 500;
+}
+
+h4 {
+	color: darkred;
+}
+
+span.roboto-black-900 {
+	color: aquamarine;
+}
+
+.roboto-black-900,
+.title {
+	color: brown;
+}
+
+.photo.name {
+	color: rgb(255, 0, 51);
+}
+
+.allphoto .photo.name {
+	color: blue;
+}
+
+#up {
+	color: dodgerblue;
+}
+
+.allcatstext p {
+	color: aquamarine;
+}
+
+.stop li {
+	color: lawngreen;
+}
+
+/* А можно ли обратиться ко всем вложенным тегам LI внутри тегов с атрибутом CLASS="bigwildcats" и CLASS="smallwildcats" ? */
+/* .bigwildcats,
+.smallwildcats li {
+	color: fuchsia;
+} */
+
+nav {
+	color: rgb(160, 160, 196);
+}
+
+.forcats li {
+	color: goldenrod;
+}
+
+.forcats > li {
+	color: chartreuse;
+}
+
+#info,
+#photo {
+	color: darkmagenta;
+}
+

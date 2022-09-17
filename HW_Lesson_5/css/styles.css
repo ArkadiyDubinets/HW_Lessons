@@ -1,0 +1,325 @@
+/* Шрифт из гугла */
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Шрифт скачанный */
+/* Нужно ли добавлять ещё один блок @font-face{...} дополнительно c параметром font-style: italic; если я хочу использовать такой шрифт(с наклоном) - Да, нужно, пересмотрел видео, об этом говорили, так же, при подключении этого шрифта, нужно добавлять font-style: italic; к тегу(классу и т.д.) */
+
+@font-face {
+	font-family: "BanderaPro";
+	src: url("../fonts/BanderaProThin.woff2") format("woff2"), url("../fonts/BanderaProThin.woff") format("woff");
+	font-display: swap;
+	font-weight: 100;
+	font-style: normal;
+}
+
+/* Нужно ли дописывать regular(переименовывать сам файл шрифта), если он указан, как в блоке и файле ниже ? */
+
+@font-face {
+	font-family: "BanderaPro";
+	src: url("../fonts/BanderaPro.woff2") format("woff2"), url("../fonts/BanderaPro.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "BanderaPro";
+	src: url("../fonts/BanderaProMedium.woff2") format("woff2"), url("../fonts/BanderaProMedium.woff") format("woff");
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "BanderaPro";
+	src: url("../fonts/BanderaPro-Bold.woff2") format("woff2"), url("../fonts/BanderaPro-Bold.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+/* Как лучше настраивать всё? 
+Поэтапно, сначала, шрифты, потом текст, потом блоки?(как у меня) 
+Или всё сразу?(с кучей свойств для каждого тега, атрибута...) */
+
+/* Настраиваем шрифты */
+
+/* Отличие italic от oblique(его нет, как видно) */
+
+/* .text1 {
+	font-family: cursive;
+	font-style: italic;
+	font-size: 20px;
+}
+
+.text2 {
+	font-family: cursive;
+	font-style: oblique;
+	font-size: 20px;
+} */
+
+body	{
+	font-family: "BanderaPro", "Balsamiq Sans", sans-serif;
+	font-weight: 400; 
+}
+
+/* h1,
+h2, 
+h3,
+h4,
+h5, 
+h6 {
+	
+} */
+
+p {
+	font-family: "Balsamiq Sans", serif;
+	font-weight: 400;
+}
+
+h1 {
+	font-family: "BanderaPro", fantasy;
+	font-size: 48px;
+	font-weight: 700;
+}
+
+h2,
+h4 {
+	color: fuchsia;
+	font-family: cursive;
+	font-size: 14px;
+	font-style: oblique;
+}
+
+h2 {
+	font-size: 24px;
+	text-align: center;
+}
+
+h3 {
+	font-family: "Balsamiq Sans";
+	font-style: italic;
+	color: rgb(248, 7, 7);
+	font-size: 36px;
+	text-align: center;
+}
+
+h5 {
+	font-weight: 100;
+}
+
+mark {
+	font-size: 40px;
+	font-weight: 900;
+}
+
+span {
+	font-family: fantasy;
+	font-size: 25px;
+	font-weight: 500;
+}
+
+/* Настраиваем картинки (Для одинакового размера) */
+/* Почему при указании размеров картинки в пикселях, она может деформироваться(чрезмерно растягиваться, например), а при указании пазмеров в процентах подгоняется под одну ширину и настраивается в высоту так ,чтобы смотрелась как уменьшеная копия(всё корректно и пропорционально) */
+
+img {
+	width: 50%;
+}
+
+/* Настраиваем текст, фон - ОБЩЕЕ */
+
+body {
+	background-color: rgb(255, 127, 80, 0.2);
+}
+
+/* Выравниваем текст по краю, центру внутри блоков */
+
+h1 {
+	text-align: center;
+}
+
+.hint {
+	text-align: center;
+}
+
+p {
+	color: rgba(35, 192, 74, 0.9);
+	text-align: justify;
+}
+
+.contacts,
+.contacts p {
+	color: rgb(221, 203, 41);
+	background-color: rgb(9, 9, 247);
+	text-align: right;
+}
+
+.forexample + p {
+	color: orange;
+	text-align: left;
+}
+
+/* Оформление текста */
+
+/* Зачеркивание, подчёркивание, надчёркивание */
+
+h5 {
+	text-decoration: underline;
+}
+
+.contacts .not {
+	text-decoration: line-through;
+}
+
+h4 {
+	text-decoration: overline;
+}
+
+.forexample a,
+.nav a  {
+	text-decoration: underline;
+}
+
+/* Вот тут разобраться, почему не убирает подчёркивание у тега span */
+
+/* .text {
+	text-decoration: underline;
+}
+
+.text span {
+	text-decoration: none;
+} */
+
+/* Тень, мультитень */
+
+.contacts {
+	text-shadow: 3px 4px 1px crimson;
+}
+
+.forexample + p {
+	text-shadow: 3px 4px 5px crimson, 8px 8px 2px rgb(0, 247, 62); 
+}
+
+h1 {
+	text-transform: capitalize;
+}
+
+.hint {
+	text-transform: lowercase;
+}
+
+#terrible {
+	text-transform: uppercase;
+}
+
+/* Интервал между строками */
+
+P {
+	line-height: 1.3;
+}
+
+/* Красная строка */
+
+main p {
+	text-indent: 20px;
+}
+
+/* Интервал между символами */
+
+.forexample ~ p {
+	letter-spacing: 5px;
+}
+
+h2 {
+	letter-spacing: 3px;
+}
+
+/* Запрещаем перенос строки */
+
+.forexample ~ p {
+	white-space: nowrap;
+}
+
+/* Интервал между словами */
+
+.forexample > a {
+	word-spacing: 7px;
+}
+
+/* -------------------------------- Отступы -------------------------------- */
+
+.block {
+	background-color: rgb(59, 38, 38);
+}
+
+/* padding */
+
+#drank {
+	background-color: aqua;
+	padding: 10px;
+}
+
+#drank_a_little {
+	background-color: blueviolet;
+	padding: 5% 10%;
+}
+
+#drank_a_lot {
+	background-color: rgb(169, 242, 245);
+	padding: 30px 40px 60px;
+}
+
+#at_the_disco {
+	background-color: chartreuse;
+	padding: 3% 6% 9% 12%;
+}
+
+#dared {
+	background-color: darkgray;
+	padding-top: 60px;
+	padding-right: 40px;
+	padding-bottom: 100px;
+	padding-left: 5px;
+}
+
+/* margin */
+
+#met_a_beauty {
+	background-color: rgb(219, 152, 70);
+	margin: 20px;
+}
+
+#brought {
+	background-color: dodgerblue;
+	margin: 0px 7px;
+}
+
+#undress {
+	background-color: lightcoral;
+	margin: 40px 5px 60px;
+}
+
+#dressed {
+	background-color: maroon;
+	margin: 0px 10px 20px 40px;
+}
+
+#kicked_out {
+	background-color: crimson;
+	margin-top: -10%;
+	margin-right: -13%;
+	margin-bottom: -6%;
+	margin-left: -18%;
+}
+#kicked_out h3 {
+	color: black;
+}
+
+
+/* width */
+
+#in_sadness {
+	background-color: violet;
+	width: 1200px;
+}

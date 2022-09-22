@@ -1,0 +1,203 @@
+/* Подключаем шрифты */
+
+/* Lato */
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400&family=Lato:wght@400;700;900&display=swap');
+
+/* HandjetCircleDdouble2 */
+
+@font-face {
+	font-family: "handjet-circle-double-2";
+	src: url("../fonts/handjet-circle-double-2.woff2") format("woff2"), url("../fonts/handjet-circle-double-2.woff") format("woff");
+	font-display: swap;
+	font-style: normal;
+	font-weight: 400;
+}
+
+/* Lifehack4 */
+
+@font-face {
+	font-family: "lifehack-4";
+	src: url("../fonts/lifehack-4.woff2") format("woff2"), url("../fonts/lifehack-4.woff") format("woff");
+	font-display: swap;
+	font-style: normal;
+	font-weight: 400;
+}
+
+/* TikiTakaRamdeuter */
+
+@font-face {
+	font-family: "tiki-taka-ramdeuter";
+	src: url("../fonts/tiki-taka-ramdeuter.woff2") format("woff2"), url("../fonts/tiki-taka-ramdeuter.woff") format("woff");
+	font-display: swap;
+	font-style: normal;
+	font-weight: 400;
+}
+
+/* Прописываем стили, свойства, размеры, отступы для макета*/
+
+/* По макету для .container1 значение margin: 152px 765px 2061px 345px;  */
+
+.container1 {
+	font-family: "Lato", serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #424551;
+	max-width: 810px;
+	margin: 152px auto 120px;
+	
+}
+
+h1 {
+	font-family: "Lato", serif;
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1E212C;
+	max-width: 810px;
+	margin-top: 38px;
+	margin-bottom: 92px;
+}
+
+img {
+	max-width: 100%;
+	min-width: 320px;
+	margin-bottom: 60px;
+	display: block;
+}
+
+.text1 {
+	font-family: "Lato", serif;
+	font-weight: 700;
+	font-size: 20px;
+	color: #1E212C;
+	line-height: 30px;
+	max-width: 810px;
+	margin-bottom: 24px;
+}
+
+.text2-3 {
+	font-family: "Lato", serif;
+	line-height: 25.6px;
+	max-width: 810px;
+	margin-bottom: 48px;
+}
+
+.text2 {
+	margin-bottom: 25.6px;
+}
+
+.text4 {
+	font-family: "Lato", serif;
+	font-weight: 700;
+	font-size: 20px;
+	color: #1E212C;
+	line-height: 30px;
+	max-width: 752px;
+	margin-left: 58px;
+	margin-bottom: 48px;
+}
+
+.text5 {
+	font-family: "Lato", serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25.6px;
+	max-width: 810px;
+	margin-bottom: 24px;
+}
+
+.text6 {
+	max-width: 600px;
+	margin-bottom: 24px;
+}
+
+li {
+	line-height: 160%;
+	max-width: 568px;
+	margin-left: 32px;
+}
+
+.text7 {
+	max-width: 810px;
+	line-height: 25.6px;
+}
+
+/* Пракитика Lesson_6 */
+
+.blocks {
+	background-color: #7a7d86;
+	font-family: "handjet-circle-double-2", serif;
+	font-weight: 400;
+	font-size: 48px;
+	padding: 15px;
+	margin-bottom: 20px;
+	border-top: 10px solid rgba(58, 247, 0, 0.1);
+	border-right: 20px double #060af3;
+	border-bottom: none;
+	border-left: 10px double #f306b8;
+}
+
+.block1 {
+	background-color: aqua;
+	/* min-height: 100px; */
+	/* max-height: 300px; */
+	min-width: 100px;
+	max-width: 500px;
+	margin-bottom: 15px;
+	overflow: hidden;
+	border: 5px dotted #f30688;
+	border-radius: 5px 20px 70px 200px;
+}
+
+.block2 {
+	background-color: crimson;
+	max-height: 100px;
+   overflow: auto;
+	border: 5px dashed #ffd900;
+}
+
+span {
+	background-color: darksalmon;
+	font-family: "lifehack-4", sans-serif;
+	font-weight: 400;
+	font-size: 36px;
+	display: block;
+	padding: 5px;
+	opacity: 0.5;
+}
+
+/* Почему строчный .line1 на одном уровне с блочным .line2 */
+
+.lines {
+	font-family: "tiki-taka-ramdeuter", serif;
+	font-weight: 400;
+	font-size: 60px;
+	padding: 20px;
+}
+
+.line1 {
+	display: inline;
+	margin-left: 15px;
+	box-shadow: -50px -25px 35px 30px rgba(8, 253, 0, 0.7), inset 5px 5px 15px 10px rgba(200, 6, 6, 0.5);;
+}
+
+/* Почему не отображается ни outline ни border-radius, если написать border-radius ниже outline  */
+
+.line2 {
+	background-color: darkorange;
+   display: inline-block;
+	height: 200px;
+	padding-top: 60px;
+	border-radius: 5px 20px 70px 200px;
+	outline: 15px dotted rgb(52, 30, 200)
+}
+
+.inviz {
+	display: none;
+}
+
+.inviz2 {
+	visibility: hidden;
+}
+

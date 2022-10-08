@@ -1,0 +1,479 @@
+/* Подключаем шрифты */
+
+/* Lato */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+/* Верстаем макет из ДЗ по уроку 6 */
+
+body {
+	font-family: "Lato", serif;
+	color: rgba(66, 69, 81, 1);
+	line-height: 1.3;
+}
+
+main {
+	padding-top: 120px;
+	margin-bottom: 250px;
+}
+
+.aboutcourse__container {
+	max-width: 1230px;
+	margin: 0 auto;
+	margin-bottom: 114px;
+}
+
+h1 {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: rgba(30, 33, 44, 1);
+}
+
+h6 {
+	font-weight: 700;
+	line-height: 163%;
+	color: rgba(30, 33, 44, 1);
+	margin-bottom: 8px;
+}
+
+.title__container {
+	margin-bottom: 40px;
+}
+
+.textcourse__container p {
+	color: rgba(66, 69, 81, 1);
+}
+
+.textcourse__container {
+	margin-bottom: 48px;
+}
+
+.forlist__container p {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 150%;
+	color: rgba(30, 33, 44, 1);
+}
+
+.forlist__container {
+	margin-bottom: 24px;
+}
+
+li {
+	min-height: 30px;
+}
+
+.list__container1 li {
+	line-height: 160%;
+	padding-left: 32px;
+	margin-bottom: 4px;
+	background: url("../img/icons/Vector.svg") 0 5px no-repeat;
+}
+
+.list__container1 li:last-child,
+.list__container2 li:last-child {
+	margin-bottom: 0px;
+}
+
+.aboutcurator__container {
+	max-width: 1230px;
+	margin: 0 auto;
+	margin-bottom: 136px;
+}
+/* Почему если постаить ниже margin, он лезет выше блока внутри которого находится? */
+.card {
+	padding-top: 20px;
+	margin-bottom: 32px;
+}
+
+.card h1 {
+	margin-bottom: 16px;
+}
+
+.card p {
+	font-size: 20px;
+	line-height: 150%;
+	color: #787A80;
+}
+
+.list__container2 li {
+	font-weight: 700;
+	line-height: 160%;
+	padding-left: 24px;
+	margin-bottom: 4px;
+}
+
+.list__container2 {
+	margin-bottom: 32px;
+}
+
+.icon1 {
+	background: url("../img/icons/Star.svg") 0 4px no-repeat;
+}
+
+.icon2 {
+	background: url("../img/icons/Vector1.svg") 0 4px no-repeat;
+}
+
+.icon3 {
+	background: url("../img/icons/Vector2.svg") 0 4px no-repeat;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* ------------------------------------- Псевдоклассы ------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+.psevdoclass__container {
+	font-size: 36px;
+	max-width: 1230px;
+	margin: 0 auto;
+}
+
+.links {
+	padding-bottom: 5px;
+}
+
+/* ----------------------------------- Псевдоклассы состояния ----------------------------------- */
+
+/* :hover
+Обращение к элементу в состоянии "при наведении мышки"
+Применяется к любому элементу */
+
+.link:hover {
+	color: rgb(255, 0, 0);
+}
+
+.block {
+	background-color: rgb(0, 132, 255);
+	padding: 15px;
+}
+
+.block:hover .block__item {
+	opacity: 1;
+	visibility: visible;
+}
+
+.block__item {
+	opacity: 0;
+	visibility: hidden;
+}
+
+/* :active
+Обращение к элементу в состоянии "при нажатой клавише мыши" 
+Применяется к любому элементу */
+
+.link:active {
+	background-color: blueviolet;
+}
+
+/* :visited
+Обращение к элементу в состоянии "посещённой ссылки"
+Используется только для ссылок(ограниченное количество свойств) */
+
+.link:visited {
+	color: darkorange;
+}
+
+/* Дублирую для того, чтобы при наведении даже посещённые ссылки выделялись */
+
+.link:hover {
+	color: rgb(255, 0, 0);
+}
+
+.listexample ul ul {
+	display: none;
+}
+ul ul li {
+	padding-left: 10px;
+}
+
+ul li:hover > ul {
+	display: block;
+}
+
+.listexample li {
+	margin-right: 850px;
+	white-space: nowrap;
+	margin-bottom: 40px;
+}
+
+/* :focus
+Обращение к элементу в состоянии "фокуса"
+Применяется к любому элементу (если указать tabindex="0") */
+
+.link:focus {
+	outline: 5px dotted rgb(255, 6, 193);
+}
+
+/* :target
+Обращение к элементу в состоянии  "эффект от ссылки из другого объекта" */
+/* Почему постоянно появляется #what в конце адресной строки и из-за этого не получается проверить работу свойства :target. Нужно удалять вручную #what в URL и тогда всё рабоатет нормально. ?????  */
+
+.blocktoo {
+	background-color: rgb(2, 247, 35);
+	padding: 15px;
+	display: none;
+}
+
+.blocktoo:target {
+	display: block;
+}
+
+/* -------------------------------- Псевдоклассы положения в коде -------------------------------- */
+
+.text {
+	font-size: 24px;
+	background-color: rgb(255, 0, 0);
+	padding: 15px;
+	color: rgb(229, 255, 0);
+	line-height: 120%;
+}
+
+/* :first-child
+Обращение к первому элементу в коде(ТОЛЬКО если он p)(через * можно обратиться к любому превому объекту) */
+
+.text p:first-child {
+	color: aqua;
+	text-transform: uppercase;
+}
+
+/* :first-of-type 
+Обращение к первому указанному элементу в коде */
+
+.text p:first-of-type {
+	color: rgb(0, 255, 242);
+	text-transform: uppercase;
+}
+
+/* last-child
+Обращение к последнему элементу в коде(ТОЛЬКО если он p)(через * можно обратиться к любому превому объекту) */
+
+.text p:last-child {
+	color: rgb(255, 0, 200);
+}
+
+/* :last-of-type 
+Обращение к последнему указанному элементу в коде */
+
+.text p:last-of-type {
+	color: rgb(1, 36, 34);
+	text-transform: uppercase;
+}
+
+/* :nth-child()
+Обращение к конкретному элементу в коде
+число или значение(чётные, нечётные, например) */
+
+.text p:nth-child(2) {
+	color: darkblue;
+}
+
+.text p:nth-child(odd) {
+	font-size: 10px;
+}
+
+.text p:nth-child(even) {
+	font-style: italic;;
+}
+
+/* :not(селектор)
+Исключение объекта(для всех кроме) */
+
+.text p:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+/* Обнуление отступа для любого последнего объектв в блоке */
+
+/* .text > *:last-child {
+	margin-bottom: 0px;
+} */
+
+/* -------------------------------- Псевдоэлементы (строчные) -------------------------------- */
+
+/* :before */
+
+span::before {
+	/* Обязятельно!!! */
+	content: "(";
+}
+
+.this div::before {
+	/* Обязятельно!!! */
+	content: "(";
+}
+
+/* ::after */
+
+span::after {
+	/* Обязятельно!!! */
+	content: ")";
+}
+
+.this div::after {
+	/* Обязятельно!!! */
+	content: ")";
+}
+
+ul.this {
+	background-color: mediumseagreen;
+	padding: 15px;
+	margin-bottom: 20px;
+}
+
+.this li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+ul.this li::before {
+	background: url("../img/icons/Vector.svg") 0 0 no-repeat;
+	content: "";
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+/* Заготовка для нумерованного списка(кастом) */
+
+ol {
+	margin-bottom: 20px;
+	padding: 15px;
+	counter-reset: item;
+	background-color: blanchedalmond;
+}
+
+ol li::before {
+	counter-increment: item;
+	content: "-"counter(item)"). ";
+	color: deeppink;
+	font-size: 24px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+ol li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+a#upstears {
+	max-width: 23px;
+	display: block;
+	margin: 0 auto;
+}
+
+/* Для игры */
+
+.game {
+	max-width: 1230px;
+	min-height: 600px;
+	padding: 10px;
+	margin: 0 auto;
+	font-weight: 900;
+	border: 3px dotted;
+	border-color: blue;
+}
+/* Как правильно выровнять текст по высоте?(указал в line-height: всю высоту конткнта, или padding:) */
+.start {
+	height: 50px;
+	width: 60px;
+	background-color: rgb(2, 253, 2);
+	text-align: center;
+	line-height: 40px; 
+	padding: 5px;
+}
+
+.start:hover {
+	background-color: rgb(253, 115, 2);
+}
+
+.way1 {
+	height: 10px;
+	width: 220px;
+	background-color: rgb(228, 253, 2);
+}
+
+.way2 {
+	height: 100px;
+	width: 10px;
+	background-color: rgb(253, 2, 2);
+	margin-left: 210px;
+}
+
+.way3 {
+	height: 10px;
+	width: 750px;
+	background-color: rgb(2, 69, 253);
+	margin-left: 210px;
+}
+
+.way4 {
+	height: 350px;
+	width: 10px;
+	background-color: rgb(2, 253, 77);
+	margin-left: 950px;
+}
+
+.way5 {
+	height: 10px;
+	width: 500px;
+	background-color: rgb(2, 215, 253);
+	margin-left: 460px;
+}
+
+.way6 {
+	height: 320px;
+	width: 10px;
+	background-color: rgb(253, 2, 178);
+	margin-left: 460px;
+}
+
+.way7 {
+	height: 10px;
+	width: 744px;
+	background-color: rgb(132, 0, 255);
+	margin-left: 460px;
+}
+
+.finish {
+	height: 50px;
+	width: 64px;
+	text-align: center;
+	padding-top: 15px;
+	background-color: rgb(2, 194, 253);
+	margin-left: 1140px;
+	display: inline-block;
+}
+
+.way1,
+.way2,
+.way3,
+.way4,
+.way5,
+.way6,
+.way7,
+.finish {
+	visibility: hidden;
+} 
+
+/* Код подсмотрел, понять не мог, что и как работает */
+
+.start:hover + .way1,
+.way1:hover,
+.way1:hover + .way2,
+.way2:hover, 
+.way2:hover + .way3, 
+.way3:hover, 
+.way3:hover + .way4, 
+.way4:hover, 
+.way4:hover + .way5, 
+.way5:hover, 
+.way5:hover + .way6,
+.way6:hover, 
+.way6:hover + .way7,
+.way7:hover, 
+.way7:hover + .finish {
+	visibility: visible;
+} 
+
